@@ -5,6 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio Juan</title>
+
+    <style>
+        * {
+            font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        html, body{
+            background-color: rgb(250, 250, 250);
+        }
+
+        .titulo{
+            color: rgb(30, 30, 30);
+            background-color: rgb(248, 248, 248);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px 3px rgb(220, 220, 220);
+        }
+
+        #perfil_profesional p{
+            background-color: white;
+            box-shadow: 5px 5px 10px 3px rgb(220, 220, 220);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        #lenguajes table {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(40, 116, 166);
+            color: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px 3px rgb(220, 220, 220);
+            margin-bottom: 30px;
+        }
+
+        #lenguajes table thead th {
+            color: rgb(60, 60, 60);
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        #lenguajes table thead th:first-child {
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        #lenguajes table thead th:last-child {
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        #lenguajes table tbody tr:first-child td {
+            padding-top: 20px;
+        }
+
+        #lenguajes table tbody td {
+            padding: 0px;
+            font-size: 14px;
+            border-right: 1px solid white;
+        }
+
+
+        #lenguajes table tbody td:last-child {
+            border-right: 0px solid transparent;
+        }
+
+        #lenguajes img {
+            width: 50px;
+            background-color: rgb(250, 250, 250);
+            border: 1px solid rgb(240, 240, 240);
+            border-radius: 20px;
+            padding: 4%;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +110,7 @@
         <section>
             <hr>
             <article id="perfil_profesional">
-                <h2>
+                <h2 class="titulo">
                     Perfil Profesional
                 </h2>
                 <p>
@@ -71,20 +146,117 @@
         <section>
             <hr>
             <article id="lenguajes">
-                <h2>
-                    Lenguajes / Desarrollo
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit distinctio nisi iusto quibusdam. Quod
-                    quam accusantium autem possimus architecto, saepe voluptatem facere, provident sint soluta ipsa
-                    similique praesentium. Temporibus, similique. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Non, eligendi! Praesentium incidunt, ipsam ratione repudiandae omnis vel quis numquam culpa
-                    harum at aspernatur quibusdam mollitia, tempora doloremque error inventore a.
-                </p>
+                <table>
+                    <caption>
+                        <h2 class="titulo">
+                            Lenguajes/Desarrollo
+                        </h2>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Lenguaje</th>
+                            <th>Nivel</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="40">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="40">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.freepik.com/256/11516/11516361.png?semt=ais_hybrid"
+                                    alt="CSS">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Javascript</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="40">
+                            </td>
+                            <td>
+                                <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+                                    alt="Javascript">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Typescript</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="30">
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+                                    alt="Typescript">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Angular</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="40">
+                            </td>
+                            <td>
+                                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png"
+                                    alt="Angular">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PowerScript</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="30">
+                            </td>
+                            <td>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMAte009nzPSgoN4dV19eUbb75E1_083CuNQ&s"
+                                    alt="PowerScript">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="5">
+                            </td>
+                            <td>
+                                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
+                                    alt="Java">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>JSP</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="5">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/256/28/28968.png" alt="JSP">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>
+                                <input type="range" disabled min="0" max="100" value="10">
+                            </td>
+                            <td>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5JGYAAAg2n01WKkLLSC1TOPb7pWvCg4BtcA&s"
+                                    alt="C#">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                </table>
             </article>
             <hr>
             <article id="programas">
-                <h2>
+                <h2 class="titulo">
                     Programas Manejados
                 </h2>
                 <p>
@@ -100,7 +272,7 @@
         <section>
             <hr>
             <article id="experiencia_laboral">
-                <h2>
+                <h2 class="titulo">
                     Experiencia Laboral
                 </h2>
                 <p>
