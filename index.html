@@ -26,12 +26,20 @@
             <li>
                 <a href="#tecnologias">Tecnologias / Desarrollo</a>
             </li>
+            <li>
+                <a href="#acerca">Acerca de mi</a>
+            </li>
+            <li>
+                <a href="#experiencia">Experiencia</a>
+            </li>
         </ul>
     </nav>
 
     <div class="content-main">
         <div id="home"></div>
         <div id="tecnologias"></div>
+        <div id="acerca"></div>
+        <div id="experiencia"></div>
     </div>
 
     <footer>
@@ -41,6 +49,22 @@
     <script>
         cargarContenido('home', '/src/app/modules/core/home.html');
         cargarContenido('tecnologias', '/src/app/modules/core/lenguajes.html');
+        cargarContenido('acerca', '/src/app/modules/core/acerca.html');
+        cargarContenido('experiencia', '/src/app/modules/core/experiencia.html');
+
+        function validarMayorEdad(Edad){
+            if(Edad >= 18){
+                console.log(`Eres mayor de edad, tu edad es ${Edad}`);
+            }else{
+                console.log(`Eres menor de edad, tu edad es ${Edad}`);
+            }
+        }
+
+        validarMayorEdad(4);
+        validarMayorEdad(15);
+        validarMayorEdad(18);
+        validarMayorEdad(23);
+        validarMayorEdad(50);
     </script>
 
 </body>
