@@ -9,9 +9,9 @@ function moverCarrusel(direccion) {
 
     if (posicionActual < 0) {
         posicionActual = totalTarjetas - 1;
-    } else if (posicionActual >= totalTarjetas) {
+    } else if (posicionActual >= (totalTarjetas - 1)) {
         posicionActual = 0;
     }
 
-    carrusel.style.transform = `translateX(${-posicionActual * 320}px)`;
+    carrusel.style.transform = `translateX(${(-posicionActual * 320) + 265}px)`;
 }

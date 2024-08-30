@@ -2,17 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi portafolio Juan</title>
 
-    <link rel="stylesheet" href="/src/assets/css/index.css">
+    <link rel="stylesheet" href="/src/assets/css/index.css" />
     <script src="/src/assets/js/shared/contenido.js"></script>
-    <link rel="stylesheet" href="/src/assets/css/shared/all.min.css">
+    <link rel="stylesheet" href="/src/assets/css/shared/all.min.css" />
     <script src="/src/assets/js/shared/all.min.js"></script>
 </head>
 
 <body>
+
+    <div class="contenido-clase">
+        <div id="clase-if"></div>
+    </div>
 
     <header>
         <h1>Juan Carlos Morales Quintana - Desarrollador Fullstack Senior</h1>
@@ -43,30 +47,17 @@
     </div>
 
     <footer>
-        <span>Derechos reservados Juan Morales ©2024 <i class="fa-solid fa-shield-halved"></i></span>
+        <span>Derechos reservados Juan Morales ©2024
+            <i class="fa-solid fa-shield-halved"></i></span>
     </footer>
 
     <script>
-        cargarContenido('home', '/src/app/modules/core/home.html');
-        cargarContenido('tecnologias', '/src/app/modules/core/lenguajes.html');
-        cargarContenido('acerca', '/src/app/modules/core/acerca.html');
-        cargarContenido('experiencia', '/src/app/modules/core/experiencia.html');
-
-        function validarMayorEdad(Edad){
-            if(Edad >= 18){
-                console.log(`Eres mayor de edad, tu edad es ${Edad}`);
-            }else{
-                console.log(`Eres menor de edad, tu edad es ${Edad}`);
-            }
-        }
-
-        validarMayorEdad(4);
-        validarMayorEdad(15);
-        validarMayorEdad(18);
-        validarMayorEdad(23);
-        validarMayorEdad(50);
+        cargarContenido("home", "/src/app/modules/core/home.html");
+        cargarContenido("tecnologias", "/src/app/modules/core/lenguajes.html");
+        cargarContenido("acerca", "/src/app/modules/core/acerca.html");
+        cargarContenido("experiencia", "/src/app/modules/core/experiencia.html");
+        //cargarContenido("clase-if", "/src/app/modules/clase/condiciones.html")
     </script>
-
 </body>
 
 </html>

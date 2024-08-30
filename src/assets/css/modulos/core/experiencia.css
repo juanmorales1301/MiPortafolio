@@ -10,7 +10,7 @@
 }
 
 .carrusel-container {
-  width: 320px;
+  width: 100%;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -21,16 +21,52 @@
   flex-direction: row;
   transition: transform 0.5s ease-in-out;
   flex-wrap: nowrap;
+  transform: translateX(300px);
 }
 
 .tarjeta {
+  display: flex;
   min-width: 300px;
-  margin: 10px;
-  background-color: #3498db;
+  margin: 20px;
+  background-color: rgb(250, 250, 250);
   color: white;
   text-align: center;
-  padding: 20px;
-  border-radius: 8px;
+  border-radius: 30px;
+  box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.35);
+  align-content: space-between;
+  min-height: 400px;
+}
+
+.tarjeta .top-tarjeta {
+  padding: 40px 20px 0px 20px;
+  width: 100%;
+}
+
+.tarjeta .img-titulo {
+  width: 100%;
+}
+
+.tarjeta .nom-empresa {
+  color: rgb(160, 160, 160);
+  width: 100%;
+  text-align: left;
+  font-size: 24px;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.tarjeta .texto {
+  width: 100%;
+  text-align: left;
+  background-color: var(--primary-color);
+  border-radius: 25px 25px 30px 30px;
+  display: flex;
+  min-height: 185px;
+}
+
+.tarjeta .texto li {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 25px;
 }
 
 .boton {
@@ -46,8 +82,10 @@
 
 .boton.prev {
   left: 0;
+  width: auto;
 }
 
 .boton.next {
   right: 0;
+  width: auto;
 }
