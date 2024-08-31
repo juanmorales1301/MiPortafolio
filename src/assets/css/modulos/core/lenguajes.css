@@ -13,50 +13,88 @@
     padding: 0px 20px;
 }
 
+.lenguajes .table-responsive {
+    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.35);
+    border-radius: 33px;
+}
+
 .lenguajes table {
     width: 100%;
     text-align: center;
     background-color: var(--primary-color);
     color: white;
     padding: 20px;
-    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.35);
-    border-radius: 33px;
-    margin-bottom: 30px;
 }
 
-.title_lenguaje{
+.title_lenguaje {
     font-weight: 400;
     font-size: 18px !important;
 }
 
+.lenguajes h2 {
+    width: auto;
+    color: rgb(120, 120, 120);
+}
+
 .lenguajes table thead th {
-    color: rgb(60, 60, 60);
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.lenguajes table thead th span {
+    padding: 0px 10px;
 }
 
 .lenguajes table thead th:first-child {
-    border-radius: 20px 0px 0px 20px;
+    padding-left: 20px;
 }
 
 .lenguajes table thead th:last-child {
+    padding-right: 20px;
+}
+
+
+.lenguajes table thead .titulo-th {
+    display: flex;
+    color: rgb(83, 83, 83);
+    background-color: rgb(255, 255, 255);
+    padding: 15px 0px;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    padding: 15px 0px;
+}
+
+.lenguajes table thead th:first-child .titulo-th {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.lenguajes table thead th:last-child .titulo-th {
     border-radius: 0px 20px 20px 0px;
 }
 
-.lenguajes table tbody tr:first-child td {
-    padding-top: 20px;
+.lenguajes table tbody tr:last-child td {
+    padding-bottom: 20px;
 }
 
 .lenguajes table tbody td {
+    text-align: center;
     padding: 0px 20px;
     font-size: 14px;
     border-right: 1px solid white;
 }
 
-
 .lenguajes table tbody td:last-child {
     border-right: 0px solid transparent;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .lenguajes img {
@@ -134,4 +172,51 @@
     position: relative;
     box-shadow: 0px 0px 5px 3px rgba(40, 40, 40, 0.25);
     top: -5px;
+}
+
+@media screen and (max-width: 600px) {
+    .cont-image img {
+        width: 200px;
+    }
+
+    .lenguajes table, .lenguajes thead, .lenguajes tbody, .lenguajes th, .lenguajes td, .lenguajes tr {
+        display: block;
+    }
+
+    .lenguajes tbody tr {
+        width: auto;
+        margin-top: 15px;
+        border: 1px solid white !important;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .lenguajes th {
+        padding: 0px !important;
+    }
+
+    .lenguajes td {
+        padding: 0px !important;
+        position: relative;
+        border-right: 0px solid transparent !important;
+        padding: 10px 0px !important;
+    }
+
+    .lenguajes td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .lenguajes table thead th:first-child .titulo-th {
+        border-radius: 20px 20px 0px 0px !important;
+    }
+    
+    .lenguajes table thead th:last-child .titulo-th {
+        border-radius: 0px 0px 20px 20px !important;
+    }
 }
