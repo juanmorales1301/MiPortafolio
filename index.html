@@ -13,49 +13,27 @@
 </head>
 
 <body>
-
     <div class="contenido-clase">
         <div id="clase-if"></div>
     </div>
 
-    <header>
-        <h1>Juan Carlos Morales Quintana - Desarrollador Fullstack Senior</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="#home">Perfil Profesional</a>
-            </li>
-            <li>
-                <a href="#tecnologias">Tecnologias / Desarrollo</a>
-            </li>
-            <li>
-                <a href="#acerca">Acerca de mi</a>
-            </li>
-            <li>
-                <a href="#experiencia">Experiencia</a>
-            </li>
-        </ul>
-    </nav>
-
     <div class="content-main">
+        <div id="header"></div>
         <div id="home"></div>
         <div id="tecnologias"></div>
         <div id="acerca"></div>
         <div id="experiencia"></div>
+        <div id="footer"></div>
     </div>
 
-    <footer>
-        <span>Derechos reservados Juan Morales ©2024
-            <i class="fa-solid fa-shield-halved"></i></span>
-    </footer>
 
     <script>
+        cargarContenido("header", "/src/app/modules/core/header.html");
         cargarContenido("home", "/src/app/modules/core/home.html");
         cargarContenido("tecnologias", "/src/app/modules/core/lenguajes.html");
         cargarContenido("acerca", "/src/app/modules/core/acerca.html");
         cargarContenido("experiencia", "/src/app/modules/core/experiencia.html");
+        cargarContenido("footer", "/src/app/modules/core/footer.html");
         //cargarContenido("clase-if", "/src/app/modules/clase/condiciones.html")
     </script>
 </body>
