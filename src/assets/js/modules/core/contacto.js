@@ -21,7 +21,7 @@ async function enviarDatosAPI() {
 
     try {
         // Realizar la petición fetch al servidor
-        const response = await fetch('http://back-portafolio-eight.vercel.app/api/contacto', {
+        const response = await fetch('https://back-portafolio-eight.vercel.app/api/contacto', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
